@@ -1,0 +1,11 @@
+create index PS_PARTKEY_SUPPKEY_SUPPCOST on partsupplier(PS_PARTKEY,PS_SUPPKEY,PS_SUPPCOST);
+
+create index S_SUPPKEY_NATION  on supplier(S_SUPPKEY,S_NATIONKEY);
+
+create index P_SIZE_TYPE_PARTKEY on part(P_size,P_Type,P_partkey);
+
+create index o_cust_odate_shipprior on orders(o_custkey,o_orderdate,o_shippriority);
+
+create index l_order_partkey_supp_shipdate on lineitem(L_ORDERKEY,L_PARTKEY,L_SUPPKEY,L_SHIPDATE);
+
+--create index b1 on orders(o_custkey);
